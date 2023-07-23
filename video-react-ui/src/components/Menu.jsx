@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { styled } from 'styled-components';
 import LeboTube from '../assets/logo.png';
 import HomeIcon from '@mui/icons-material/Home';
@@ -19,9 +20,9 @@ import SettingsBrightnessOutlinedIcon from '@mui/icons-material/SettingsBrightne
 
 const Container = styled.div`
   flex: 1;
-  background-color: #202020;
-  height: 100vh;
-  color: white;
+  background-color: ${({ theme }) => theme.bgLighter};
+  height: 100%;
+  color: ${({ theme }) => theme.text};
   font-size: 14px;
   position: sticky;
   top: 0;
@@ -53,7 +54,7 @@ const Item = styled.div`
 
 const Hr = styled.hr`
   margin: 15px 0;
-  border: 0.5px solid #373737;
+  border: 0.5px solid ${({ theme }) => theme.soft};
 `;
 
 const Login = styled.div``;
@@ -72,7 +73,13 @@ const Button = styled.button`
   gap: 5px;
 `;
 
-export default function Menu() {
+const Title = styled.h2`
+  font-size: 14px;
+  font-weight: 500;
+  color: #aaa;
+  margin-bottom: 20px;
+`;
+export default function Menu({ setDarkMode, darkMode }) {
   return (
     <Container>
       <Wrapper>
@@ -110,6 +117,7 @@ export default function Menu() {
           </Button>
         </Login>
         <Hr />
+        <Title>BEST OF LEBOTUBE</Title>
         <Item>
           <LibraryMusicOutlinedIcon />
           Music
@@ -147,9 +155,9 @@ export default function Menu() {
           <HelpOutlineOutlinedIcon />
           Help
         </Item>
-        <Item>
+        <Item onClick={() => setDarkMode(!darkMode)}>
           <SettingsBrightnessOutlinedIcon />
-          Light Mode
+          {darkMode ? 'Light Mode' : 'Dark Mode'}
         </Item>
       </Wrapper>
     </Container>
