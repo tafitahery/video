@@ -18,7 +18,54 @@ function App() {
       <Menu />
       <Main>
         <Navbar />
-        <Wrapper>video cards</Wrapper>
+        <Wrapper>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+          <h1>Test</h1>
+        </Wrapper>
       </Main>
     </Container>
   );
