@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { styled } from 'styled-components';
 
 const Container = styled.div`
@@ -46,16 +47,18 @@ const Info = styled.div`
 
 export default function Card() {
   return (
-    <Container>
-      <Image src="https://i9.ytimg.com/vi_webp/k3Vfj-e1Ma4/mqdefault.webp?v=6277c159&sqp=CIjm8JUG&rs=AOn4CLDeKmf_vlMC1q9RBEZu-XQApzm6sA" />
-      <Details>
-        <ChannelImage src="https://yt3.ggpht.com/yti/APfAmoE-Q0ZLJ4vk3vqmV4Kwp0sbrjxLyB8Q4ZgNsiRH=s88-c-k-c0x00ffffff-no-rj-mo" />
-        <Texts>
-          <Title>Test Video</Title>
-          <ChannelName>Lebo dev</ChannelName>
-          <Info>660,908 views . 1 day ago</Info>
-        </Texts>
-      </Details>
-    </Container>
+    <Link to="video/test" style={{ textDecoration: 'none' }}>
+      <Container>
+        <Image src="https://i9.ytimg.com/vi_webp/k3Vfj-e1Ma4/mqdefault.webp?v=6277c159&sqp=CIjm8JUG&rs=AOn4CLDeKmf_vlMC1q9RBEZu-XQApzm6sA" />
+        <Details>
+          <ChannelImage src="https://yt3.ggpht.com/yti/APfAmoE-Q0ZLJ4vk3vqmV4Kwp0sbrjxLyB8Q4ZgNsiRH=s88-c-k-c0x00ffffff-no-rj-mo" />
+          <Texts>
+            <Title>Test Video</Title>
+            <ChannelName>Lebo dev</ChannelName>
+            <Info>660,908 views . 1 day ago</Info>
+          </Texts>
+        </Details>
+      </Container>
+    </Link>
   );
 }

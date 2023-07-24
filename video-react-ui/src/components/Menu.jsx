@@ -17,6 +17,7 @@ import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import FlagOutlinedIcon from '@mui/icons-material/FlagOutlined';
 import HelpOutlineOutlinedIcon from '@mui/icons-material/HelpOutlineOutlined';
 import SettingsBrightnessOutlinedIcon from '@mui/icons-material/SettingsBrightnessOutlined';
+import { Link } from 'react-router-dom';
 
 const Container = styled.div`
   flex: 1;
@@ -83,10 +84,12 @@ export default function Menu({ setDarkMode, darkMode }) {
   return (
     <Container>
       <Wrapper>
-        <Logo>
-          <Img src={LeboTube} />
-          LeboTube
-        </Logo>
+        <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <Logo>
+            <Img src={LeboTube} />
+            LeboTube
+          </Logo>
+        </Link>
         <Item>
           <HomeIcon />
           Home
