@@ -5,6 +5,7 @@ import {
   ThumbDownAltOutlined,
   ThumbUpOutlined,
 } from '@mui/icons-material';
+import Comments from '../components/Comments';
 
 const Container = styled.div`
   display: flex;
@@ -160,6 +161,8 @@ export default function Video() {
           </ChannelInfo>
           <Subscribe>Subscribe</Subscribe>
         </Channel>
+        <Hr />
+        <Comments />
       </Content>
       <Recommandation>Recommandation</Recommandation>
     </Container>
