@@ -6,6 +6,7 @@ import {
   ThumbUpOutlined,
 } from '@mui/icons-material';
 import Comments from '../components/Comments';
+import Card from '../components/Card';
 
 const Container = styled.div`
   display: flex;
@@ -164,7 +165,16 @@ export default function Video() {
         <Hr />
         <Comments />
       </Content>
-      <Recommandation>Recommandation</Recommandation>
+      <Recommandation>
+        <Card type="sm" />
+        <Card type="sm" />
+        <Card type="sm" />
+        <Card type="sm" />
+        <Card type="sm" />
+        <Card type="sm" />
+        <Card type="sm" />
+        <Card type="sm" />
+      </Recommandation>
     </Container>
   );
 }
