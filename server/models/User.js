@@ -25,7 +25,6 @@ const UserSchema = mongoose.Schema(
     },
     subcribedUsers: {
       type: [String],
-      default: 0,
     },
   },
   { timestamps: true }
