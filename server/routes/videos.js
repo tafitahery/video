@@ -25,7 +25,7 @@ router.put('/:id', verifyToken, updateVideo);
 router.delete('/:id', verifyToken, deleteVideo);
 
 // get a video
-router.post('/find/:id', getVideo);
+router.get('/find/:id', getVideo);
 
 // wiew a video
 router.put('/view/:id', addView);
